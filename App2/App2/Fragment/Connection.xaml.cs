@@ -21,6 +21,7 @@ namespace App2.Fragment
             InitializeComponent();
             ConnectionViewModel = new ConnectionViewModel();
             BindingContext = ConnectionViewModel;
+            ConnectionViewModel.connectionFragment = this;
         }
 
         private void Connection_Clicked(object sender, EventArgs e)

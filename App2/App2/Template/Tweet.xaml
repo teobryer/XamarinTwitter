@@ -2,51 +2,51 @@
 <ViewCell  xmlns="http://xamarin.com/schemas/2014/forms" 
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="App2.Template.Tweet">
-    
-      <Grid BackgroundColor="White"  Margin="10">
+
+    <Grid BackgroundColor="White"  Margin="10">
 
 
-            <Grid>
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="Auto"/>
-                    <RowDefinition Height="Auto"/>
-                    <RowDefinition Height="Auto"/>
-                </Grid.RowDefinitions>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="15*"/>
-                    <ColumnDefinition Width="75*"/>
-                    <ColumnDefinition Width="10*"/>
-                </Grid.ColumnDefinitions>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="15*"/>
+                <ColumnDefinition Width="75*"/>
+                <ColumnDefinition Width="10*"/>
+            </Grid.ColumnDefinitions>
 
             <Label  Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" TextColor="Black" Padding="5"  VerticalOptions="Center" Text="{Binding Texte}"></Label>
 
-                <StackLayout Grid.Column="1" Orientation="Horizontal">
+            <StackLayout Grid.Column="1" Orientation="Horizontal">
                 <Label TextColor="Black"   Text="{Binding AuteurName}"></Label>
                 <Label TextColor="Black"   Text="{Binding AuteurAt}"></Label>
-                </StackLayout>
+            </StackLayout>
 
             <Label TextColor="Black"   Text="{Binding Temps}" Grid.Column="2"></Label>
 
-                <BoxView Margin="10,5,10,5" Grid.RowSpan="2" Color="Black"></BoxView>
+            <BoxView Margin="10,5,10,5" Grid.RowSpan="2" Color="Black"></BoxView>
 
 
-                <Grid Grid.Row="2" Grid.ColumnSpan="3">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="*"/>
-                        <ColumnDefinition Width="*"/>
-                        <ColumnDefinition Width="*"/>
-                    </Grid.ColumnDefinitions>
+            <Grid Grid.Row="2" Grid.ColumnSpan="3">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
 
-                    <Button TextColor="Black"   BackgroundColor="Transparent" Text="Répondre" Grid.Column="0"></Button>
-                    <Button TextColor="Black"   BackgroundColor="Transparent"  Text="Retweet" Grid.Column="1"></Button>
-                    <Button TextColor="Black"   BackgroundColor="Transparent" Text="Favoris" Grid.Column="2"></Button>
-                   
-                </Grid>
-            
+                <ImageButton Source="reply.png" HeightRequest="30" Margin="5" BackgroundColor="Transparent"  Grid.Column="0"></ImageButton>
+                <ImageButton Source="retweet.png" HeightRequest="30" Margin="5"  BackgroundColor="Transparent"  Grid.Column="1"></ImageButton>
+                <ImageButton Source="favorite.png" HeightRequest="30" Margin="5"   BackgroundColor="Transparent"  Grid.Column="2"></ImageButton>
+
             </Grid>
-            
 
-            
-      </Grid>
- 
+        </Grid>
+
+
+
+    </Grid>
+
 </ViewCell>

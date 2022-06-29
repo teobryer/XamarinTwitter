@@ -12,9 +12,9 @@
                 </Grid.ColumnDefinitions>
 
 
-                <Button BackgroundColor="Transparent" Font="12" Text="Nouveau" Grid.Column="0"/>
+                <ImageButton Source="pencil.png" BackgroundColor="Transparent" HorizontalOptions="Start" Margin="25"  Grid.Column="0"/>
                 <Button BackgroundColor="Transparent" Font="15"  Text="Accueil" Grid.Column="1"/>
-                <Button BackgroundColor="Transparent" Font="12"  Text="Rechercher" Grid.Column="2"/>
+                <ImageButton  Source="search.png" BackgroundColor="Transparent" HorizontalOptions="End" Margin="25"  Grid.Column="2"/>
 
 
 
