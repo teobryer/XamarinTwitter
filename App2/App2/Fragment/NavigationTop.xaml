@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App2.Fragment.NavigationTop">
+  <ContentView.Content>
+        <Grid HeightRequest="80" BackgroundColor="#58B0F0">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+
+                <Button BackgroundColor="Transparent" Font="12" Text="Nouveau" Grid.Column="0"/>
+                <Button BackgroundColor="Transparent" Font="15"  Text="Accueil" Grid.Column="1"/>
+                <Button BackgroundColor="Transparent" Font="12"  Text="Rechercher" Grid.Column="2"/>
+
+
+
+            </Grid>
+        </Grid>
+    </ContentView.Content>
+</ContentView>

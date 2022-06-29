@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:viewmodel="clr-namespace:App2.ViewModel" 
+             x:Class="App2.Fragment.Connection"
+            >
+   
+  <ContentView.Content>
+        <Grid>
+
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Label HorizontalOptions="Center" TextColor="Black" Text="Connexion à Twitter"></Label>
+            <Entry TextColor="Black" x:Name="username" Text="{Binding Username}" FontSize="15" Margin="30,0,30,0" PlaceholderColor="Black" Placeholder="Identifiant" Grid.Row="1"></Entry>
+            <Entry IsPassword="true" TextColor="Black" Text="{Binding Password}" x:Name="password" FontSize="15" Margin="30,0,30,0" PlaceholderColor="Black"   Placeholder="Mot de passe" Grid.Row="2"></Entry>
+
+            <StackLayout  Margin="30,0,30,0" Orientation="Horizontal" Grid.Row="3">
+                <Switch ThumbColor="#58B0F0" OnColor="#58B0F0"></Switch>
+                <Label VerticalOptions="Center" TextColor="Black" Text="Mémoriser mes informations"></Label>
+            </StackLayout>
+
+            <Button Margin="30,0,30,0" Clicked="Connection_Clicked" Grid.Row="4" Text="Se connecter"></Button>
+        </Grid>
+  </ContentView.Content>
+</ContentView>

@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:template="clr-namespace:App2.Template" xmlns:fragment="clr-namespace:App2.Fragment"
+             x:Class="App2.MainPage">
+
+   
+
+        <Grid Margin="0" BackgroundColor="White">
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+        <fragment:NavigationTop Grid.Row="0" ></fragment:NavigationTop>
+
+        <fragment:Connection x:Name="connectionFragment"  Grid.Row="1" ></fragment:Connection>
+
+        <StackLayout    Grid.Row="2">
+
+            <ListView  IsVisible="False" x:Name="listeTweets" SelectionMode="None" BackgroundColor="White" HasUnevenRows="True" >
+                
+                <ListView.ItemTemplate>
+                    <DataTemplate  >
+                        <template:Tweet></template:Tweet  >
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+          
+        </StackLayout>
+       
+        <fragment:NavigationBottom Grid.Row="3" ></fragment:NavigationBottom>
+
+    
+        </Grid>
+       
+    
+
+</ContentPage>
